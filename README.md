@@ -14,7 +14,7 @@ Install these requirements
 ```bash
 cd
 git clone git@github.com:stephaneerard/i-want-a-shot-vagrant.git
-cd i-want-a-shot-vagrant.git
+cd i-want-a-shot-vagrant
 vagrant up
 vagrant ssh
 ```
