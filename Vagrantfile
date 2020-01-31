@@ -23,6 +23,6 @@ Vagrant.configure("2") do |config|
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
     source  ~/.nvm/nvm.sh
     nvm install 12.13.0
-    npm install -g i-want-a-shot
+    npm install -g i-want-a-shot i-want-a-shot-list
   SHELL
 end
