@@ -16,12 +16,12 @@ cd
 git clone git@github.com:stephaneerard/i-want-a-shot-vagrant.git
 cd i-want-a-shot-vagrant
 vagrant up
-vagrant ssh
 ```
 
-Now that you are ssh'ing into the virtual machine, you can run i-want-a-shot
+Now that your Vagrant box is running, you can use it
 
 ```bash
-cd /vagrant # shared folder
-take-a-shot.ts shot "your search"
+./ux/take-a-shot.sh "your search"
+./ux/take-a-shot-list.sh --query \'your search\' --query \'another search\'
+./ux/take-a-shot-everyday.sh \'*/5 * * * *\' --query \'your search\' --query \'another search\'
 ```
