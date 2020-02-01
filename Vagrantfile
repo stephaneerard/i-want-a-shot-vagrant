@@ -62,16 +62,23 @@ Vagrant.configure("2") do |config|
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
     source  ~/.nvm/nvm.sh
     nvm install 12.13.0
+    npm i -g pnpm
     git clone https://github.com/stephaneerard/node-i-want-a-shot-list.git
     cd node-i-want-a-shot-list
-    npm install
+    pnpm install
     npm link
     cd
     git clone https://github.com/stephaneerard/node-i-want-a-shot.git
     cd node-i-want-a-shot
-    npm install
+    pnpm install
+    npm link
+    git clone https://github.com/stephaneerard/node-i-want-a-shot-everyday.git
+    cd node-i-want-a-shot-everyday
+    pnpm install
     npm link
     sudo sysctl -w kernel.unprivileged_userns_clone=1
     echo "cd /vagrant/test" >> $HOME/.bashrc
+    mkdir /vagrant/test
+    echo "You can now run `vagrant ssh` to log into this machine and run some fancy things."
   SHELL
 end
