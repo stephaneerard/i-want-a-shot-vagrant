@@ -42,7 +42,8 @@ sudo apt-get install -y \
   libnss3 \
   lsb-release \
   xdg-utils \
-  wget
+  wget \
+  screen
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 source ~/.nvm/nvm.sh
 nvm install 12.13.0
