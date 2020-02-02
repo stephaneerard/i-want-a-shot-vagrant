@@ -15,7 +15,8 @@ Install these requirements
 cd
 git clone git@github.com:stephaneerard/i-want-a-shot-vagrant.git
 cd i-want-a-shot-vagrant
-vagrant up
+./ux/vagrant.up.sh
+./ux/git.init.sh
 ```
 
 Now that your Vagrant box is running, you can use it
